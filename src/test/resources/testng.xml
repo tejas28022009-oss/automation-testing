@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Cognizant Automation Suite" parallel="methods" thread-count="3"
+       verbose="2">
+
+    <listeners>
+        <listener class-name="com.automation.testing.listeners.TestListener"/>
+    </listeners>
+
+    <test name="BDD Regression Tests">
+        <parameter name="environment" value="dev"/>
+        <classes>
+            <class name="com.automation.testing.runners.TestRunner"/>
+        </classes>
+    </test>
+</suite>
