@@ -24,6 +24,14 @@ public class AmazonHomePage extends BasePage {
     public void searchFor(String product) {
         sendKeys(searchBox, product);
         click(searchButton);
+        waitForResults();
+    }
+
+    public void waitForResults() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException ignored) {
+        }
     }
 
     public boolean areResultsDisplayed() {
