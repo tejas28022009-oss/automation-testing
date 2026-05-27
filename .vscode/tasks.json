@@ -4,8 +4,8 @@
         {
             "label": "Run Tests",
             "type": "shell",
-            "command": "mvnw.cmd",
-            "args": ["clean", "test"],
+            "command": "cmd",
+            "args": ["/c", "mvnw.cmd", "clean", "test"],
             "group": {
                 "kind": "build",
                 "isDefault": true
